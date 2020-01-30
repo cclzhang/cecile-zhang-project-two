@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/6068607f3c.js" crossorigin="anonymous"></script>
     <title>Sophie</title>
 </head>
 <body>
@@ -11,12 +13,12 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="index.html">
                         home
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#about">
                         about
                     </a>
                 </li>
@@ -24,12 +26,12 @@
                     Sophie
                 </li>
                 <li>
-                    <a href="">
+                    <a href="./html/blog.html">
                         blog
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="./html/contact.html">
                         contact
                     </a>
                 </li>
@@ -46,7 +48,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section id="about">
             <h2>Who is Sophie?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos soluta deserunt adipisci earum, iure aliquid velit, in optio voluptatibus voluptatum minus. Consequatur mollitia earum, perspiciatis, rem repudiandae aliquam minus excepturi delectus reprehenderit unde eos quae vel? Aliquam voluptate expedita ullam hic suscipit eos accusantium culpa! Nemo dolor tempora exercitationem?</p>
             <button>
@@ -77,39 +79,71 @@
         </section>
         <section class="secondaryNav">
             <section class="photos">
-                <div></div>
-                <h3>
-                    photos
-                </h3>
+                <a href="#gallery">
+                    <div>
+                        <i class="fas fa-image">
+                            <span class="sr-only">
+                                image icon
+                            </span>
+                        </i>
+                    </div>
+                    <h3>
+                        photos
+                    </h3>
+                </a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
                 </p>
             </section>
             <section class="miniAbout">
-                <div></div>
-                <h3>
-                    about
-                </h3>
+                <a href="#about">
+                    <div>
+                        <i class="fas fa-user-alt">
+                            <span class="sr-only">
+                                user icon
+                            </span>
+                        </i>
+                    </div>
+                    <h3>
+                        about
+                    </h3>
+                </a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
                     delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
                 </p>
             </section>
             <section class="blog">
-                <div></div>
-                <h3>
-                    blog
-                </h3>
+                <a href="./html/blog.html">
+                    <div>
+                        <i class="fas fa-desktop">
+                            <span class="sr-only">
+                                desktop icon
+                            </span>
+                        </i>
+                    </div>
+                    <h3>
+                        blog
+                    </h3>
+                </a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
                     delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
                 </p>
             </section>
             <section class="contact">
-                <div></div>
-                <h3>
-                    get in touch
-                </h3>
+                <a href="./html/contact.html">
+                    <div>
+                        <i class="fas fa-phone">
+                            <span class="sr-only">
+                                phone icon
+                            </span>
+                        </i>
+                    </div>
+                    <h3>
+                        get in touch
+                    </h3>
+                </a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
                     delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
@@ -127,15 +161,15 @@
                 find out more
             </button>
         </section>
-        <section class="gallery">
+        <section id="gallery">
             <div>
-                <img src="./assets/home-gallery-1" alt="vintage blue bicycle parked against an orange wall">
+                <img src="./assets/home-gallery-1.jpg" alt="vintage blue bicycle parked against an orange wall">
             </div>
             <div>
-                <img src="./assets/home-gallery-2" alt="unique three story orange building with an open arc entrance">
+                <img src="./assets/home-gallery-2.jpg" alt="unique three story orange building with an open arc entrance">
             </div>
             <div>
-                <img src="./assets/home-gallery-3" alt="banana beach branded orange beach umbrella against a turquoise sky">
+                <img src="./assets/home-gallery-3.jpg" alt="banana beach branded orange beach umbrella against a turquoise sky">
             </div>
         </section>
     </main>
