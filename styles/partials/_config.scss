@@ -1,0 +1,41 @@
+
+// VARIABLES ------- //
+
+// colours
+$primaryColour: rgb(246, 168, 35);
+$secondaryColour: rgb(168, 39, 6);
+$accentColour: rgb(31, 204, 223);
+
+$primaryBlack: rgb(44, 44, 44);
+$primaryGrey: rgb(79, 79, 79);
+$primaryWhite: rgb(240, 239, 237);
+$pureWhite: rgb(255, 255, 255);
+$trueBlack: rgb(0, 0, 0);
+
+$secondaryTextColour: rgb(40, 94, 100);
+
+
+// fonts
+$primaryFont: "Roboto", "Arial", sans-serif;
+$titleFont: "Lora", "Times New Roman", serif;
+
+// other //
+$anchorPseudoClass: "a:hover, a:focus, a:active";
+
+
+// MIXINS ------- //
+
+// ie fontsize backup
+@mixin fontSize($fontValue) {
+    font-size: $fontValue * 1px;
+    font-size: ($fontValue / 10) * 1 rem;
+}
+
+// flexbox //
+@mixin flex($flexDirection, $xAxis, $yAxis) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $flexDirection;
+	justify-content: $xAxis;
+	align-items: $yAxis;
+}

@@ -1,0 +1,160 @@
+
+
+@media (max-width: 850px) {
+    .halves, 
+    .imgContainer, 
+    .textContainer, 
+    .secondaryNav .wrapper .halves,
+    .journey .textContainer, 
+    .gallery .wrapper div  {
+        width: 100%;
+    }
+
+    .homescreen {
+        @include flex(column-reverse, center, center);
+        h1 {
+            margin: 5%;
+        }
+    }
+
+    .introText {
+        top: calc(490px - 5vw);
+        left: 20%;
+        transform: rotate(-65deg);
+    }
+
+    .homeProfile {
+        position: static;
+    }
+
+    .about, 
+    .journey {
+        text-align: center;
+    }
+
+    .journey .imgContainer {
+        margin-bottom: 50px;
+    }
+
+    .journey .wrapper{
+        justify-content: center;
+    }
+
+    .favourite {
+        padding-bottom: 40px;
+        border-bottom: 3px dashed $primaryColour;
+    }
+
+    .secondaryNav .wrapper {
+        width: 80%;
+        margin: 0 50px 0 150px;
+    }
+
+    .gallery .wrapper {
+        justify-content: center;
+        div {
+            max-width: 450px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .blog main .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        aside, 
+        .blogContent {
+            width: 100%;
+        }
+
+        aside {
+            max-width: 450px;
+            margin-top: 50px;
+        }
+    }
+
+    .contact .wrapper {
+        @include flex(column, center, center);
+        .contactInfo, 
+        form {
+            width: 100%;
+        }
+
+        .contactInfo {
+            ul {
+                @include flex(row, center, center);
+                li, 
+                a {
+                    padding: 0 5%;
+                }
+            }
+            text-align: center;
+            margin-bottom: 5%;
+            border-bottom: 5px solid $primaryColour;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    h2 {
+        @include fontSize(40);
+    }
+    .wrapper {
+        width: 95%;
+    }
+    .introText {
+        display: none;
+    }
+
+    nav li:nth-child(3) {
+        display: none;
+    }
+
+    .secondaryNav .wrapper {
+        width: 100%;
+        margin: 0 2%;
+        padding-right: 5px;
+        h4:hover, 
+        h4:focus {
+            color: $primaryColour;
+            border-bottom: 3px solid $primaryColour;
+        }
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    h1 {
+        @include fontSize(60);
+    }
+
+    nav {
+        width: auto;
+        background-color: transparent;
+        position: static;
+        ul {
+            height: 100%;
+            @include flex(column, flex-start, flex-start);
+        }
+    }
+
+    .homescreen {
+        @include flex(column-reverse, flex-end, flex-end);
+    }
+
+    .blogHeader, 
+    .contactHeader {
+        background-position: center;
+    }
+
+    .blog form input, 
+    .contact form input {
+        width: 100%;
+    }
+
+    .blog .emailAddress, 
+    .contact .emailAddress {
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,65 @@
+
+
+body {
+    font-family: $primaryFont;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+nav li,
+button {
+    text-transform: uppercase;
+    color: $primaryBlack;
+}
+
+h1 {
+    font-family: $titleFont;
+    font-size: calc(1rem + 9vw);
+}
+
+h1, 
+h2 {
+    font-family: $titleFont;
+}
+
+h2 {
+    @include fontSize(76);
+    line-height: 92px;
+}
+
+.navCenter,
+h3 {
+    @include fontSize(38);
+}
+
+h4 {
+    @include fontSize(28);
+}
+
+h5 {
+    @include fontSize(24);
+}
+
+nav {
+    line-height: 29px;
+    font-weight: 700;
+}
+
+nav,
+p, 
+button {
+    @include fontSize(18);
+}
+
+p, 
+button {
+    line-height: 32px;
+}
+
+.navCenter {
+    font-family: $titleFont;
+}

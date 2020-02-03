@@ -1,0 +1,119 @@
+
+// header
+
+.homeHeader {
+    height: 80vh;
+    background-color: $primaryColour;
+    overflow: hidden;
+}
+
+.homescreen {
+    height: 100%;
+    @include flex(row, flex-start, center);
+    padding: 5% 2% 0;
+}
+
+.introText {
+    width: 13%;
+    min-width: 150px;
+    position: absolute;
+    top: calc(300px - 3vw);
+    left: 8%;
+}
+
+.homeProfile {
+    width: 31%;
+    min-width: 175px;
+    position: absolute;
+    top: calc(165px - 3vw);
+    right: 12%;
+    box-shadow: 18px 18px $pureWhite;
+    animation: fadein 2s ease;
+}
+
+// about
+
+.about {
+    padding: 107px 0 140px 0;
+}
+
+// favourite + travel
+.halves {
+    width: 40%;
+}
+
+.favPic {
+    width: 50%;
+    box-shadow: 18px 18px $secondaryColour, -200px 18px $secondaryColour;
+    position: relative;
+    top: -43px;
+}
+
+.travelPic {
+    width: 50%;
+    box-shadow: 18px 18px $primaryColour, 200px 18px $primaryColour;
+    position: relative;
+    bottom: -50px;
+}
+
+.favText {
+    padding-top: 65px;
+}
+
+.travelText {
+    padding: 30px 0 65px 0;
+    text-align: right;
+}
+
+.readMore {
+    padding: 6px 20px;
+}
+
+// secondaryNav
+
+.secondaryNav .wrapper{
+    @include flex(row, space-around, center);
+    padding: 130px 0 50px 0;
+    .halves {
+        width: 40%;
+        position: relative;
+        padding: 20px 0;
+    }
+    i {
+        background: $primaryColour;
+        border-radius: 50%;
+        padding: 15px;
+        position: absolute;
+        top: 10px;
+        left: -70px;
+        @include fontSize(20);
+    }
+}
+
+// journey
+.journey {
+    padding: 100px 0;
+    .imgContainer {
+        width: 24%;
+        min-width: 200px;
+        box-shadow: 18px 18px $primaryColour;
+    }
+    .textContainer {
+        width: 65%;
+    }
+}
+
+// gallery
+
+.gallery {
+    .wrapper {
+        @include flex(row, space-between, center);
+        padding: 95px 0;
+        div {
+            width: 31%;
+        }
+    }
+}
+
+
+

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6068607f3c.js" crossorigin="anonymous"></script>
     <title>Sophie</title>
 </head>
 <body>
-    <header>
+    <header class="homeHeader">
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">
+                <li class="activePage">
+                    <a href="index.html" >
                         home
                     </a>
                 </li>
@@ -22,7 +23,7 @@
                         about
                     </a>
                 </li>
-                <li>
+                <li class="navCenter">
                     Sophie
                 </li>
                 <li>
@@ -37,139 +38,155 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <img src="./assets/home-circle-text.png" alt="It's all about">
-        </div>
-        <h1>
-            Sophie
-        </h1>
-        <div>
-            <img src="./assets/profile.jpg" alt="Profile photo of Sophie with spacebuns using two orange slices to cover her eyes whilst making a silly face.">
+        <div class="wrapper homescreen">
+            <div class="introText">
+                <img src="./assets/home-circle-text.png" alt="It's all about">
+            </div>
+            <h1>
+                Sophie
+            </h1>
+            <div class="homeProfile">
+                <img src="./assets/profile.jpg" alt="Profile photo of Sophie with spacebuns using two orange slices to cover her eyes whilst making a silly face.">
+            </div>
         </div>
     </header>
     <main>
-        <section id="about">
-            <h2>Who is Sophie?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos soluta deserunt adipisci earum, iure aliquid velit, in optio voluptatibus voluptatum minus. Consequatur mollitia earum, perspiciatis, rem repudiandae aliquam minus excepturi delectus reprehenderit unde eos quae vel? Aliquam voluptate expedita ullam hic suscipit eos accusantium culpa! Nemo dolor tempora exercitationem?</p>
-            <button>
-                find out more
-            </button>
+        <section id="about" class="about">
+            <div class="wrapper">
+                <h3>Who is Sophie?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos soluta deserunt adipisci earum, iure aliquid velit, in optio voluptatibus voluptatum minus. Consequatur mollitia earum, perspiciatis, rem repudiandae aliquam minus excepturi delectus reprehenderit unde eos quae vel? Aliquam voluptate expedita ullam hic suscipit eos accusantium culpa! Nemo dolor tempora exercitationem?</p>
+                <button>
+                    find out more
+                </button>
+            </div>
         </section>
         <section class="favourite">
-            <div><img src="./assets/home-favourite.jpg" alt="Sophie's labradoodle sticking their head out of an orange car's window"></div>
-            <h2>Sophie's favourite things</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eveniet reiciendis quo illo, explicabo maxime? Quos labore officiis dolores autem corporis praesentium incidunt, nihil sunt perspiciatis nisi? Dolor, distinctio reiciendis.
-            </p>
-            <button>
-                find out more
-            </button>
+            <div class="wrapper box">
+                <div class="halves favPic">
+                    <img src="./assets/home-favourite.jpg" alt="Sophie's labradoodle sticking their head out of an orange car's window">
+                </div>
+                <div class="halves favText">
+                    <h4>Sophie's favourite things</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eveniet reiciendis quo illo, explicabo maxime? Quos labore officiis dolores autem corporis praesentium incidunt, nihil sunt perspiciatis nisi? 
+                    </p>
+                    <button class="readMore">
+                        read more
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="travel">
-            <div>
-                <img src="./assets/home-travel.jpg" alt="orange beach umbrellas and turquoise beach chairs on the beach">
+            <div class="wrapper box">
+                <div class="halves travelText">
+                    <h4>where she's travelled</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, fuga obcaecati. Ipsum eligendi nesciunt ex odit modi quibusdam molestiae eveniet deleniti? Aperiam aliquid neque cum id ab minus aut labore!
+                    </p>
+                    <button class="readMore">
+                        read more
+                    </button>
+                </div>
+                <div class="halves travelPic">
+                    <img src="./assets/home-travel.jpg" alt="orange beach umbrellas and turquoise beach chairs on the beach">
+                </div>
             </div>
-            <h2>where she's travelled</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, fuga obcaecati. Ipsum eligendi nesciunt ex odit modi quibusdam molestiae eveniet deleniti? Aperiam aliquid neque cum id ab minus aut labore!
-            </p>
-            <button>
-                find out more
-            </button>
         </section>
         <section class="secondaryNav">
-            <section class="photos">
-                <a href="#gallery">
-                    <div>
+            <div class="wrapper">
+                <section class="photos halves">
+                    <a href="#gallery">
                         <i class="fas fa-image">
                             <span class="sr-only">
                                 image icon
                             </span>
                         </i>
-                    </div>
-                    <h3>
-                        photos
-                    </h3>
-                </a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
-                </p>
-            </section>
-            <section class="miniAbout">
-                <a href="#about">
-                    <div>
+                        <h4>
+                            photos
+                        </h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores delectus voluptatum nesciunt ad! Saepe.
+                    </p>
+                </section>
+                <section class="miniAbout halves">
+                    <a href="#about">
                         <i class="fas fa-user-alt">
                             <span class="sr-only">
                                 user icon
                             </span>
                         </i>
-                    </div>
-                    <h3>
-                        about
-                    </h3>
-                </a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
-                    delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
-                </p>
-            </section>
-            <section class="blog">
-                <a href="./html/blog.html">
-                    <div>
+                        <h4>
+                            about
+                        </h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
+                        delectus voluptatum nesciunt ad! Saepe.
+                    </p>
+                </section>
+                <section class="miniBlog halves">
+                    <a href="./html/blog.html">
                         <i class="fas fa-desktop">
                             <span class="sr-only">
                                 desktop icon
                             </span>
                         </i>
-                    </div>
-                    <h3>
-                        blog
-                    </h3>
-                </a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
-                    delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
-                </p>
-            </section>
-            <section class="contact">
-                <a href="./html/contact.html">
-                    <div>
+                        <h4>
+                            blog
+                        </h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
+                        delectus voluptatum nesciunt ad! Saepe.
+                    </p>
+                </section>
+                <section class="miniContact halves">
+                    <a href="./html/contact.html">
                         <i class="fas fa-phone">
                             <span class="sr-only">
                                 phone icon
                             </span>
                         </i>
-                    </div>
-                    <h3>
-                        get in touch
-                    </h3>
-                </a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
-                    delectus voluptatum nesciunt ad! Saepe, provident? Dolores nobis fugit tempora.
-                </p>
-            </section>
+                        <h4>
+                            get in touch
+                        </h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque amet maxime porro error asperiores
+                        delectus voluptatum nesciunt ad! Saepe.
+                    </p>
+                </section>
+            </div>
         </section>
         <div>
             <img src="./assets/home-banner.jpg" alt="Close up shot of an auditorium with orange chairs">
         </div>
         <section class="journey">
-            <div><img src="./assets/home-journey.jpg" alt="An artsy shot of Sophie wearing an orange t-shirt and blue ripped jeans with spacebuns and sunglasses coolly looking at the distance while standing on the ledge of a building"></div>
-            <h2>Sophie's journey</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, hic iste corporis aliquid amet tempore autem veritatis itaque! Illo quis consectetur pariatur alias officia sunt rem, ab accusamus libero eos suscipit hic praesentium delectus expedita nesciunt veniam. Dicta libero incidunt aliquid excepturi ex facilis hic soluta, assumenda sit commodi pariatur!</p>
-            <button>
-                find out more
-            </button>
+            <div class="wrapper box">
+                <div class="imgContainer">
+                    <img src="./assets/home-journey.jpg" alt="An artsy shot of Sophie wearing an orange t-shirt and blue ripped jeans with spacebuns and sunglasses coolly looking at the distance while standing on the ledge of a building">
+                </div>
+                <div class="textContainer">
+                    <h3>Sophie's journey</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, hic iste corporis aliquid amet tempore autem veritatis itaque! Illo quis consectetur pariatur alias officia sunt rem, ab accusamus libero eos suscipit hic praesentium delectus expedita nesciunt veniam. Dicta libero incidunt aliquid excepturi ex facilis hic soluta, assumenda sit commodi pariatur! Illo quis consectetur pariatur alias officia.</p>
+                    <button>
+                        find out more
+                    </button>
+                </div>
+            </div>
         </section>
-        <section id="gallery">
-            <div>
-                <img src="./assets/home-gallery-1.jpg" alt="vintage blue bicycle parked against an orange wall">
-            </div>
-            <div>
-                <img src="./assets/home-gallery-2.jpg" alt="unique three story orange building with an open arc entrance">
-            </div>
-            <div>
-                <img src="./assets/home-gallery-3.jpg" alt="banana beach branded orange beach umbrella against a turquoise sky">
+        <section id="gallery" class="gallery">
+            <div class="wrapper">
+                <div>
+                    <img src="./assets/home-gallery-1.jpg" alt="vintage blue bicycle parked against an orange wall">
+                </div>
+                <div>
+                    <img src="./assets/home-gallery-2.jpg" alt="unique three story orange building with an open arc entrance">
+                </div>
+                <div>
+                    <img src="./assets/home-gallery-3.jpg" alt="banana beach branded orange beach umbrella against a turquoise sky">
+                </div>
             </div>
         </section>
     </main>

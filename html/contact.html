@@ -4,102 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/6068607f3c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <title>Sophie | Contact</title>
 </head>
-<body>
-    <header>
+<body class="contact">
+    <header class="contactHeader">
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="../index.html">
                         home
                     </a>
                 </li>
                 <li>
-                    <a href="#about">
+                    <a href="../index.html#about">
                         about
                     </a>
                 </li>
-                <li>
+                <li class="navCenter">
                     Sophie
                 </li>
                 <li>
-                    <a href="./html/blog.html">
+                    <a href="./blog.html">
                         blog
                     </a>
                 </li>
-                <li>
-                    <a href="./html/contact.html">
+                <li class="activePage">
+                    <a href="./contact.html">
                         contact
                     </a>
                 </li>
             </ul>
         </nav>
-        <h2>
-            get in touch
-        </h2>
     </header>
     <main>
-        <section>
-            <ul>
-                <li>
-                    <a href="">
-                        <span class="sr-only">
-                            facebook icon
-                        </span>
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="sr-only">
-                            twitter icon
-                        </span>
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="sr-only">
-                            linkedin icon
-                        </span>
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="sr-only">
-                            instagram icon
-                        </span>
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-            <address>
-                <a href="mailto:info@email.com?subject=subject%line">info@email.com</a>
-                123 - 456 - 7890<br>
-                123 Queen Street West, Unit 10<br>
-                Toronto, Ontario<br>
-                M5V2D5
-            </address>
-        </section>
-        <form action="">
-            <input type="text" id="nameContact" class="name" placeholder="Name">
-            <label for="nameContact" class="sr-only">
-                enter your name here
-            </label>
-            <input type="email" id="emailAddressContact" class="emailAddress" placeholder="Email address">
-            <label for="emailAddressContact" class="sr-only">
-                enter your email address here
-            </label>
-            <textarea name="commentBox" id="commentBox" cols="75" rows="15" placeholder="Message"></textarea>
-            <label for="commentBox" class="sr-only">
-                type out your message here
-            </label>
-            <button type="submit">
-                submit
-            </button>
-        </form>
+        <div class="wrapper">
+            <h2>
+                get in touch
+            </h2>
+            <section class="contactInfo">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <span class="sr-only">
+                                facebook icon
+                            </span>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Ccl_Zhang">
+                            <span class="sr-only">
+                                twitter icon
+                            </span>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/">
+                            <span class="sr-only">
+                                linkedin icon
+                            </span>
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/hungryxixi/?hl=en">
+                            <span class="sr-only">
+                                instagram icon
+                            </span>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <address>
+                    <a href="mailto:info@email.com?subject=subject%line">info@email.com</a>
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </address>
+            </section>
+            <form action="">
+                <input type="text" id="nameContact" class="name" placeholder="Name">
+                <label for="nameContact" class="sr-only">
+                    enter your name here
+                </label>
+                <input type="email" id="emailAddressContact" class="emailAddress" placeholder="Email address">
+                <label for="emailAddressContact" class="sr-only">
+                    enter your email address here
+                </label>
+                <textarea name="commentBox" id="commentBox" cols="75" rows="10" placeholder="Message"></textarea>
+                <label for="commentBox" class="sr-only">
+                    type out your message here
+                </label>
+                <button type="submit" class="submit">
+                    submit
+                </button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>
